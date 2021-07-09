@@ -1,0 +1,20 @@
+{
+
+"manifest_version":2,
+"name": "OutlookRemover",
+"version": "1.0.1",
+
+"description": "Removes the annoying sidebar in outlook",
+
+"icons" :{
+"48": "icons/sidebar-48.png"
+},
+
+"content_scripts":[
+	{
+		"matches":["*://*.outlook.live.com/*"],
+		"js":["/outlookbar.js"]
+	}
+]
+
+}
